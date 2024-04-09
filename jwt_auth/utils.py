@@ -36,7 +36,7 @@ def jwt_encode_handler(payload):
         payload,
         settings.JWT_SECRET_KEY,
         settings.JWT_ALGORITHM
-    ).decode('utf-8')
+    )
 
 
 def jwt_decode_handler(token):
